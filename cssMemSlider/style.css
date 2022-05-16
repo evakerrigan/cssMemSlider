@@ -62,12 +62,12 @@
 }
 
 .dots {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: grey;
     cursor: pointer;
-    border: 10px solid #000;
+    border: 0.5rem solid #000;
     transition: background 1s;
 }
 .dots:hover {
