@@ -1,15 +1,20 @@
+*, *:before , *:after {
+    box-sizing: border-box;
+  }
 .wrapper {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
+    width: 70%;
+    margin-left: calc(30%/2);
+    margin-top: 10vh;
+    padding: 5%;
     display: flex;
-    border: 1px solid blue;
     flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
 }
 .wrapper-img {
     width: 400%;
-    border: 1px solid green;
     overflow: hidden;
+    padding-bottom: 0.5%;
 }
 .wrapper-content {
     width: 400%;
@@ -25,6 +30,7 @@
 }
 .text {
     width: 100%;
+    padding-left: 0.5%;
 }
 .wrapper-label {
     width: 20%;
@@ -34,7 +40,7 @@
 }
 
 .slide {
-    height: 25vh;
+    height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -56,16 +62,19 @@
 }
 
 .dots {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: grey;
     cursor: pointer;
-    border: 5px solid white;
+    border: 10px solid #000;
     transition: background 1s;
 }
 .dots:hover {
     background-color: green;
+}
+.dots:active {
+    background-color: blue;
 }
 input {
     display: none;
@@ -125,8 +134,11 @@ input {
 }
 
 @media (max-width: 767px) {
-    .wrapper {width: 90%;}
+    .wrapper {width: 90%; margin-left: calc(10%/2);}
     .wrapper-text {width: 100%; order: 1;}
     .wrapper-label {width: 100%;}
     .wrapper-label {justify-content: center;}
+}
+@media (min-width: 768px) and (max-width: 1067px) {
+    .wrapper {width: 75%; margin-left: calc(25%/2);}    
 }
